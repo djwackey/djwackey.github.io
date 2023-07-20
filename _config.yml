@@ -1,10 +1,10 @@
 # SITE CONFIGURATION
-baseurl: "/"
-url: "https://sylhare.github.io"
+baseurl: ""
+url: "https://djwackey.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: 黑泡泡选手的技术博客                                    # site's title
-description: "黑泡泡选手的技术博客"      # used by search engines
+title: 黑泡泡选手的技术博客                             # site's title
+description: "黑泡泡选手的技术博客"                     # used by search engines
 avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
