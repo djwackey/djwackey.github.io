@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 回文数
+title: Leetcode刷题 - 9.回文数
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

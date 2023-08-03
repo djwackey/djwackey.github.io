@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 无重复字符的最长子串
+title: Leetcode刷题 - 3.无重复字符的最长子串
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 字母异位词分组
+title: Leetcode刷题 - 49.字母异位词分组
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

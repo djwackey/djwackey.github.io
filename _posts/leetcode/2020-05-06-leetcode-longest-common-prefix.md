@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 最长公共前缀
+title: Leetcode刷题 - 14.最长公共前缀
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 整数反转
+title: Leetcode刷题 - 7.整数反转
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

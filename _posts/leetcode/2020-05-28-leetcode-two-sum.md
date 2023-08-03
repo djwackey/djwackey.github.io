@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 两数之和
+title: Leetcode刷题 - 1.两数之和
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

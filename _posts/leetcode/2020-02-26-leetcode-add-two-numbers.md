@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 两数相加
+title: Leetcode刷题 - 2.两数相加
 author: djwackey
 tags: [Leetcode]
 categories: leetcode

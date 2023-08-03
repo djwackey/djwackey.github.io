@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode刷题 - 有效的括号
+title: Leetcode刷题 - 20.有效的括号
 author: djwackey
 tags: [Leetcode]
 categories: leetcode
