@@ -31,26 +31,26 @@ class ListNode:
         self.next = None
 
 
-def add_two_numbers(l1, l2):
+def add_two_numbers(linked_list1, linked_list2):
     """两数相加
-        复杂度分析：
-            时间复杂度：O(max(m,n))，假设 m 和 n 分别表示 l1 和 l2 的长度，上面的算法最多重复max(m,n)次。
-            空间复杂度：O(max(m,n))，新列表的长度最多为max(m,n)+1。
+    复杂度分析：
+        时间复杂度：O(max(m,n))，假设 m 和 n 分别表示 linked_list1 和 linked_list2 的长度，上面的算法最多重复max(m,n)次。
+        空间复杂度：O(max(m,n))，新列表的长度最多为max(m,n)+1。
     """
-    assert(l1 is None or isinstance(l1, ListNode))
-    assert(l2 is None or isinstance(l2, ListNode))
-    p, q, carry = l1, l2, 0
+    assert linked_list1 is None or isinstance(linked_list1, ListNode)
+    assert linked_list2 is None or isinstance(linked_list2, ListNode)
+    p, q, carry = linked_list1, linked_list2, 0
     curr = dummy_head = ListNode(0)
-    while p != None or q != None:
-        x = p.val if p != None else 0
-        y = q.val if q != None else 0
+    while p is not None or q is not None:
+        x = p.val if p is not None else 0
+        y = q.val if q is not None else 0
         s = carry + x + y
         carry = s // 10
         curr.next = ListNode(s % 10)
         curr = curr.next
-        if p != None:
+        if p is not None:
             p = p.next
-        if q != None:
+        if q is not None:
             q = q.next
     if carry > 0:
         curr.next = ListNode(carry)
@@ -69,22 +69,22 @@ def make_linked_list(values):
             t = t.next
     return n
 
-def print_linked_list(l):
+def print_linked_list(linked_list):
     """打印链表
     """
-    assert(l is None or isinstance(l, ListNode))
-    while l is not None:
-        print(l, l.__dict__)
-        l = l.next
+    assert linked_list is None or isinstance(linked_list, ListNode)
+    while linked_list is not None:
+        print(linked_list, linked_list.__dict__)
+        linked_list = linked_list.next
 
-def show_two_numbers(l1, l2):
+def show_two_numbers(linked_list1, linked_list2):
     """显示两数相加过程
     """
-    print_linked_list(l1)
+    print_linked_list(linked_list1)
     print('-' * 100)
-    print_linked_list(l2)
+    print_linked_list(linked_list2)
     print('-' * 100)
-    result = add_two_numbers(l1, l2)
+    result = add_two_numbers(linked_list1, linked_list2)
     print_linked_list(result)
     return result
 
@@ -139,10 +139,10 @@ def main():
         ([], [0, 1]),
         ([9, 9], [1])
     ]
-    for vs1, vs2 in testcases:
-        l1 = make_linked_list(vs1)
-        l2 = make_linked_list(vs2)
-        _ = show_two_numbers(l1, l2)
+    for list1, list2 in testcases:
+        linked_list1 = make_linked_list(list1)
+        linked_list2 = make_linked_list(list2)
+        _ = show_two_numbers(linked_list1, linked_list2)
         print('\n')
 
 
